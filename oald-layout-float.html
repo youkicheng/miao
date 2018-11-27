@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		* {
+			background-color: rgba(0,0,0,0.08);
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html,body {
+			height: 100%;
+		}
+		div {
+			height: 100%;
+		}
+		div > section {
+			float: left;
+			width: 20%;
+			height: 100%;
+			border-right: 1px solid blue;
+		}
+		div .section2 {
+			width: 40%;
+		}
+		.section2 h2 {
+        	height: 80px;
+        }
+        .section2 main {
+        	height: calc(100% - 80px);
+        } 	
+        .section4 {
+        	border-right: none;
+        }
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<section class="section1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
+		<section class="section2">
+			<h2>字典</h2>
+			<main>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</main>
+		</section>
+		<section class="section3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
+		<section class="section4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
+	</div>
+</body>
+</html>
