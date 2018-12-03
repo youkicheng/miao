@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>14</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			/*background-color: rgba(0,0,0,0.08);*/
+			list-style: none;
+		}
+		div ul li {
+			float: left;
+			width: 100px;
+			height: 40px;
+			margin: 0 2.5px;
+			text-align: center;
+			line-height: 40px;
+			position: relative;
+		}
+		div ul li:hover {
+			border-radius: 10px;
+			-webkit-box-shadow: 0 0 5px rgba(0,113,241,1); 
+		}
+		div ul ul {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+		}
+		div ul li:hover > ul {
+			display: block;
+		}
+		div ul ul ul {
+			left: 100%;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul class="wrap-level">
+			<li>动画
+				<ul class="level-two">
+					<li>MAD-AMV</li>
+					<li>MMD-3D</li>
+					<li>短片 配音</li>
+				</ul>
+			</li>
+			<li>番剧
+				<ul class="level-two">
+					<li>连载动画</li>
+					<li class="a">完结动画
+						<ul class="level-three">
+							<li>火影</li>
+							<li>柯南</li>
+							<li>死神</li>
+						</ul>
+					</li>
+					<li>资讯</li>
+					<li>官方延伸</li>
+				</ul>
+			</li>
+			<li>音乐
+				<ul class="level-two">
+					<li>音频</li>
+					<li>原创音乐</li>
+					<li>翻唱</li>
+					<li>演奏</li>
+					<li>三次元音乐</li>
+				</ul>
+			</li>
+			<li>舞蹈
+				<ul class="level-two">
+					<li>宅舞</li>
+					<li>三次元舞蹈</li>
+					<li>舞蹈教程</li>
+				</ul>
+			</li>
+			<li>游戏
+				<ul class="level-two">
+					<li>单机</li>
+					<li class="b">网游
+						<ul class="level-three">
+							<li>lol</li>
+							<li>cf</li>
+							<li>dnf</li>
+						</ul>
+					</li>
+					<li>手机游戏</li>
+					<li>桌游</li>
+					<li>赛事</li>
+				</ul>
+			</li>
+			<li>影视
+				<ul class="level-two">
+					<li>杂谈</li>
+					<li>剪辑</li>
+					<li>特摄</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
