@@ -1,0 +1,206 @@
+1.div和h1元素
+  带有class属性的div里id=adc的元素
+  ul里的li的子元素div 
+  div
+  background或color
+  当前活动的目标元素
+  input之后的ul之后的p之后的所有同级span元素
+  
+2. 0
+   2
+   11
+   1
+   240
+  
+3.test.example.com/path/../the/../path/c.css
+
+4.字体宽度
+  像素
+  页面的根节点的字体大小
+  视窗宽度的百分比
+  视窗高度的百分比
+
+5. 1.86
+
+6. Brown  200px
+   quick  24px
+   junps  24px
+   over   36px
+   lazy   54px
+   dog    36px
+   sucks  200px
+
+7.italic：浏览器会显示一个斜体的字体样式
+  oblique：浏览器会显示一个倾斜的字体样式
+
+8.:nth-child(n+9):nth-last-child(-n+4)
+  [class^="damiao"]
+  [rel*="nofollow"]
+
+9.a:link{}
+  a:visited{}
+  a:focus{}
+  a:hover{}
+  a:active{}
+  后面的伪类优先级高
+
+10.第三个
+
+11.沿中间线对齐
+
+12.小写字母x下面的一条线
+
+13.一个元素按盒模型从内向外分为concent padding border margin
+   水平方向
+   垂直方向
+
+14.设置一个tabindex
+   outline：none
+
+15./* ... */
+
+16. rgba参数格式错误
+    font-varient:abc;
+    color:#ff0048;
+    font:25px serif;
+
+17.父级元素没设置高度  因为百分比的大小是相对其父级元素宽高的大小，而父元素的高度只是一个缺省值：height: auto;。
+   父元素有hegiht值 父元素
+
+18.content-box 内容区盒子
+   padding-box 内边框盒子
+   border-box  边框盒子
+   margin-box  外边框盒子
+
+19.<before></before>
+   <div>
+      <h1>The article</h1>
+      <p>the quick brown fox</p>
+   </div>
+   <after></after>
+
+20.content:"A";
+   white-space:pre;
+
+21.ie6盗版多
+   
+
+22.有doctype使浏览器按w3c标准解析渲染页面，没有就按浏览器自己的方式解析渲染页面
+
+23. 80
+    160
+
+24. <a href="https://www.mi.com/index.html" title="小米官网"></a>
+    
+25.绝对定位+top right bottom left=0 margin=auto
+   table布局居中
+   绝对定位+translate居中
+   flex居中
+
+26.em框      字符框,高度是文本字号大小
+   内容框    为一串em框构成,在替换元素中内容区就是元素的固有高度加上可能的外边框、边框或内边框
+   行内框    高度为line-height高度,替换元素中高度为内容区高度
+   行框      包含多个行内框的最高点和最低点
+
+27.baseline为小写字母x的底线 
+   非替换元素，行内框高度 = line-height；替换元素，行内框 = 内容区高度（固有高度+外边距、边框、内边距）
+
+28.规定与表格单元相关联的一个或多个表头单元的 id
+
+29.
+
+30.对象呈现为inline对象，但是对象的内容作为block对象呈现
+
+31.雪碧图或css精灵，是网页图片处理的一种方式，它允许你将一个页面涉及到的所有零星图片都包含到一张大图中去，这样一来，当访问该页面时，载入的图片就不会像以前那样一幅一幅地慢慢显示出来了。
+  优点:减少网页的http请求，提升网页加载速度。合并多张小图片成大图，能减少字节总数（大图大小<=多张小图大小）
+  缺点:前期需要处理图片将小图合并，多些许工程量。 对于需要经常改变的图片维护起来麻烦。
+   
+32.伪元素不支持hover 可以改成div:hover::after{}
+
+33.61px
+
+34.普通文本框以小写x下面的底线对齐
+   inline-block中没有内容还有高度则以margin-box下边界
+
+35.  html文档中的元素如块级元素、行内元素依据他们的显示属性按照在文档中的先后次序依次显示。块级元素从上到下依次排列，框之间的垂直距离由框的垂直margin计算得到。行内元素在一行中水平布置
+     一般情况下，在css中，一个元素的位置和尺寸的计算都相对于一个矩形，这个矩形被称为包含块
+
+36.常规流:离其最近的块级祖先
+   定位:是其相对定位的祖先
+   浮动:同常规流
+
+37.background-color 背景颜色
+   background-image 背景图片
+   background-size  背景图片大小
+   background-position 背景图片位置
+   background-repeat 背景图片重复方式
+   background-origin 背景图片开始位置
+   background-clip 背景图片绘制区域 
+
+38.用box-shadow属性把水平或者垂直方向设置为0px
+
+39. table  此元素会作为块级表格来显示
+    table-row-group    此元素会作为一个或多个行的分组来显示
+    table-header-group    此元素会作为一个或多个行的分组来显示
+    table-footer-group    此元素会作为一个或多个行的分组来显示
+    table-row    此元素会作为一个表格行显示
+    table-column-group    此元素会作为一个或多个列的分组来显示
+    table-column    此元素会作为一个单元格列显示
+    table-cell    此元素会作为一个表格单元格显示
+    table-caption    此元素会作为一个表格标题显示
+
+40.  opacity=0，该元素隐藏起来了，但不会改变页面布局，并且，如果该元素已经绑定一些事件，如click事件，那么点击该区域，也能触发点击事件的
+     visibility=hidden，该元素隐藏起来了，但不会改变页面布局，但是不会触发该元素已经绑定的事件
+     display=none，把元素隐藏起来，并且会改变页面布局，可以理解成在页面中把该元素删除掉一样
+ 
+41.
+
+42.因为在浏览器中1cm并不一定等于实际1cm
+
+43.
+
+44.
+
+45.
+
+
+46. :checked
+    :disabled
+    :enabled
+
+47.  对 textarea 应用样式 style="resize:none;"
+                                                                                            48.reset是重置所有元素的样式，normalize重置部分元素
+
+49.border-collapse: collapse
+
+50. background-position:  3px -5px;
+    background-repeat: no-repeat;
+
+51.    
+
+
+52. omit 排除
+    multiple  多个值
+    驼峰式  Camel-Case
+    中划线式 line-through
+    layout 布局
+    typo  打字错误
+    code 代码
+    review 视口
+    半径   radius
+    config 配置
+    集合   assemblage
+    矩形  rectangle
+    binary 二进制
+    decimal  十进制
+    十六进制  Hexadecimal
+    八进制  Octal
+    SEO     搜索引擎优化
+    HTML实体
+    语义化  semantization
+    兼容性   compatibility 
+    quirk  
+    reference  参照
+    大小写敏感   case-sensitive
+    别名      another name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+		
