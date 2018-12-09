@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>mobike</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+		html {
+			overflow-x: hidden;
+			 overflow-y: auto; 
+		}
+		ul li {
+			list-style: none;
+			
+		}
+		header {
+			background-image: url('https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-7.jpg');
+			background-repeat:no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		header .nav {
+			height: 57px;
+			width: 1080px;
+			margin: 0 auto;
+
+		}
+		header .mobike-logo {
+			width: 100px;
+			height: 37px;
+			float: left;
+			margin-top:20px;
+			margin-left: 20px; 
+		}
+		header .mobike-logo a {
+			display: block;
+			width: 100px;
+			height: 37px;
+			background-repeat: no-repeat;
+			background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1543510978,2617487582&fm=26&gp=0.jpg); 
+			background-size: 100px 37px;
+		}
+		header .nav input {
+			display: none;
+		}
+		@media screen and (min-width: 1052px){
+
+			header .nav-main {
+				float: left;
+				margin-left: 594.64px;
+				margin-top: 20px;
+			}
+			header .nav-main > ul > li {
+				float: left;
+
+			}
+			header .nav-main > ul > li:last-child{
+				display: none;
+			}
+
+			header .nav-main > ul > li > a {
+				padding:  8px 20px;
+				color: #fff;
+			}
+		
+
+		}
+		@media screen and (max-width: 1052px) {
+
+			header .nav .nav-main {
+				clear: both;
+			
+			}
+			header .nav-main > ul > li {
+				line-height: 54px;
+				text-indent: 20px;
+				background-color: rgba(255,69,0,0.5);
+				display: none;
+				
+			}
+
+			header .nav a {
+				color: #fff;
+			}
+
+
+			header .nav {
+				position: relative;`
+			}
+			header .nav label span {
+				display: block;
+				position: fixed;
+				width: 40px;
+				height: 40px;
+				top: 20px;
+				right: 20px;
+				font-size: 0;
+			
+			}
+			header .nav label span::before {
+				content: "";
+				position: absolute;
+				background-color: #fff;
+				width: 20px;
+				height: 2px;
+			}
+			header .nav label span::after {
+				content: "";
+				position: absolute;
+				background-color: #fff;
+				width: 20px;
+				height: 2px;
+				top: 15px;
+				right: 20px;
+			}
+
+
+			input:checked + .checkbox-nav .nav-main > ul > li {
+				display: block;
+			}
+			input:checked + .checkbox-nav label span::after {
+				transform: rotate(45deg);
+				top: 10px;
+
+			}
+			input:checked + .checkbox-nav label span::before {
+				transform: rotate(-45deg);
+				top: 10px;
+			} 
+
+
+
+		}
+		
+
+		header .slider {
+			width: 1040px;
+			height: 686.6px;
+			padding: 76.6px 20px;
+			margin: 0 auto;
+		}
+
+		main div ul li a {
+			color: #fff;
+			display: block;
+			width: 100%;
+			height: 258px;
+			background-image: url('https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg');
+			background-repeat:no-repeat;	
+			border: 1px solid #fff; 
+			text-align: center;
+			font-size:24px;
+			overflow: hidden;
+		}
+
+
+
+
+		@media screen and (min-width: 1052px){
+			main div ul li {
+				float: left;
+				width: 25%;
+				height: 258px;
+
+			}
+			header .nav label span {
+				display: none;
+			}
+
+		}
+		@media screen and (min-width: 795px) and (max-width: 1052px){
+			main div ul li {
+				float: left;
+				width: 50%;
+				height: 258px;		
+			}
+
+
+
+		}	
+		@media screen and (max-width: 795px){
+			main div ul li {
+				float: left;
+				width: 100%;
+				height: 258px;
+
+
+			}
+		}
+		footer ul li {
+			float: left;
+			width: 33.33333%;
+			height: 50px;
+		}
+		footer ul li:nth-child(2){
+			text-align: center;
+		}
+		footer ul li:nth-child(3){
+			text-align: right;
+		}
+
+		footer .icon {
+			background-image: url(https://mobike.com/cn/assets/themes/moby/img/icon-wechat.png);
+			width: 50px;
+			height: 50px;
+			background-repeat:no-repeat;
+			background-size: contain;
+			display: inline-block;
+		}
+		footer .text {
+			display: inline-block;
+		}
+		footer ul li .text2 {
+			text-align: left;
+		}
+		footer ul li .text3 {
+			text-align: left;
+		}
+
+		@media screen and (max-width: 795px){
+			footer ul li {
+				width: auto;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<div class="mobike-logo">
+			<a href="https://mobike.com/cn/" ></a>
+			</div>
+
+			
+			<input type="checkbox" id="mobike-checkbox" >
+			<div class="checkbox-nav">
+				<div class="nav-main">
+					<ul>
+						<li><a href="">产品</a></li>
+						<li><a href="">摩拜科技</a></li>
+						<li><a href="">关于</a></li>
+						<li><a href="">广告合作</a></li>
+						<li><a href="">立刻开始使用 mobike ></a></li>
+					</ul>
+				</div>
+				<label for="mobike-checkbox">
+					<span style="color: #fff">菜单</span>	
+				</label> 
+			</div>
+			
+		</div>
+		<div class="slider"></div>
+	</header>
+	<main>
+		<div>
+			<ul>
+				<li><a href="">大国品牌</a></li>
+				<li><a href="">摩拜科技</a></li>
+				<li><a href="">摩拜生活</a></li>
+				<li><a href="">摩拜校招</a></li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-icon">
+			<ul>
+				<li> 
+					<div class="icon"></div>
+					<div class="text">
+						<h4>微信小程序</h4>
+						<p>微信扫一扫，直接用车</p>
+					</div>
+				</li>
+				<li>
+					<div class="icon icon2"></div>
+					<div class="text text2">
+						<h4>红包车</h4>
+						<p>骑摩拜，能赚钱</p>
+					</div>	
+				</li>
+				<li>
+					<div class="icon icon3"></div>
+					<div class="text text3">
+						<h4>摩范分</h4>
+						<p>文明骑行，信用生活</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</footer>
+</body>
+</html>
