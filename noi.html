@@ -215,3 +215,275 @@
 	var l=Math.sqrt((Yb - Ya) * (Yb - Ya) + (Xb - Xa) * (Xb - Xa))
 	console.log(l.toFixed(3))
 </script>
+
+<script id="ch0103/17" type="0103.17">
+	var x1=+prompt()
+	var y1=+prompt()
+	var x2=+prompt()
+	var y2=+prompt()
+	var x3=+prompt()
+	var y3=+prompt()
+    var s=(x1 * y2 + x2 * y3 + x3 * y1 - x1 * y3 - x2 * y1 - x3 * y2) / 2
+    console.log(s.toFixed(2))
+</script>
+
+<script id="ch0103/18" type="ch0103.18">
+	var a1=+prompt()
+	var a2=+prompt()
+	var n=+prompt()
+	var an=a1 + (n - 1) * (a2 - a1)
+	console.log(an)
+</script>
+
+<script id="ch0103/19" type="ch0103.19">
+	var A=+prompt()
+	var B=+prompt()
+	var S=A * B
+	console.log(S)
+</script>
+
+<script id="ch0103/20" type="ch0103/20">
+	var n=+prompt()
+	var a=Math.pow(2,n)
+	console.log(a)
+</script>
+
+<script id="ch0104/01" type="ch0104.01">
+	var N=Number(prompt())
+	if (N > 0) {
+		console.log("positive")
+	}	else if (N < 0) {
+		console.log("negative")
+	}   else {
+		console.log("zero")
+	}
+</script>
+
+<script id="ch0104/02" type="0104.02">
+	var a=Number(prompt())
+	var b=Math.abs(a)
+	console.log(b)
+</script>
+
+<script id="ch0104/03" type="0104.03">
+	var n=Number(prompt())
+	if (n % 2 == 0) {
+		console.log("even")
+	}   else {
+		console.log("odd")
+	}
+</script>
+
+<script id="ch0104/04" type="ch0104.04">
+	var a=prompt()
+	if (a.charCodeAt() % 2 == 0) {
+		console.log("NO")
+	}   else {
+		console.log("YES")
+	}
+</script>
+
+<script id="ch0104/05" type="ch0104.05">
+	var x=Number(prompt())
+	var y=Number(prompt())
+	if (x > y) {
+		console.log(">")
+	}   else if (x == y){
+		console.log("=")
+	}   else {
+		console.log("<")
+	}
+</script>
+
+<script id="ch0104/06" type="ch0104.06">
+	var x=Number(prompt())
+	if (x - 10 >= 0 && x - 100 < 0) {
+		console.log(1)
+	}   else {
+		console.log(0)
+	}
+</script>
+
+<script id="ch0104/07" type="0104.07">
+	var x=Number(prompt())
+	var y=Number(prompt())
+	if (x >= 10 || y >= 20) {
+		console.log(1)
+	}   else {
+		console.log(0)
+	}
+</script>
+
+<script id="ch0104/08" type="ch0104.08">
+	var n=Number(prompt())
+	if (n % 3 == 0 && n % 5 == 0) {
+		console.log("YES")
+	}   else {
+		console.log("NO")
+	}
+</script>
+
+<script id="ch0104/09" type="0104.09">
+	var n=Number(prompt())
+	if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0) {
+		console.log(3 + " " + 5 + " " + 7)
+	}   else if (n % 3 == 0 && n % 5 == 0) {
+		console.log(3 + " " + 5)
+	}   else if (n % 3 == 0 && n % 7 == 0) {
+		console.log(3 + " " + 7)
+	}   else if (n % 5 == 0 && n % 7 == 0) {
+		console.log(5 + " " + 7)
+	}   else if (n % 3 == 0) {
+		console.log(3)
+	}   else if (n % 5 == 0) {
+		console.log(5)
+	}   else if (n % 7 == 0) {
+		console.log(7)
+	}   else {
+		console.log("n")
+	}
+</script>
+
+<script id="ch0104/10" type="ch0104.10">
+	var a=Number(prompt())
+	var b=Number(prompt())
+	if ((a < 60 && b < 60) || (a >=60 && b >=60)) {
+		console.log(0)
+	}   else {
+		console.log(1)
+	}
+</script>
+
+<script id="ch0104/11" type="ch0104.11">
+	var n=Number(prompt())
+	if (n==1 || n==3 || n==5) {
+		console.log("NO")
+	}   else {
+		console.log("YES")
+	}
+</script>
+
+<script id="ch0104/12" type="ch0104.12">
+	var n=Number(prompt())
+	if ((n / 3 + 27 + 23) < (n / 1.2)) {
+		console.log("Bike")
+	}   else if ((n / 3 + 27 + 23) > (n / 1.2))	{
+		console.log("Walk")
+	}   else {
+		console.log("All")
+	}
+</script>
+
+<script id="ch0104/13" type="ch0104.13">
+	var x=Number(prompt())
+	if (x >= 0 && x < 5) {
+		var y=-x + 2.5
+		console.log(y.toFixed(3))
+	}   else if (x >=5 && x < 10) {
+		var y=2 - 1.5 * (x - 3) * (x - 3)
+		console.log(y.toFixed(3))
+	}   else {
+		var y=x / 2 - 1.5
+		console.log(y.toFixed(3))
+	}
+</script>
+
+<script id="ch0104/14" type="ch0104.14">
+	var a=Number(prompt())
+	var b=prompt()
+	if (a <= 1000 && b=="y") {
+		var c=8 + 5
+		console.log(c)
+	}   else if (a <=1000 && b=="x") {
+		var c=8
+		console.log(c)
+	}   else if (a > 1000 && b=="x") {
+		var c=8 + Math.ceil((a - 1000) / 500) * 4
+		console.log(c)
+	}	else if (a > 1000 && b=="y") {
+		var c=8 + Math.ceil((a - 1000) / 500) * 4 + 5
+		console.log(c)
+	}
+</script>
+
+<script id="ch0104/15" type="ch0104.15">
+	var a=Number(prompt())
+	var b=Number(prompt())
+	var c=Number(prompt())
+	if (a >= b && a >= c) {
+		console.log(a)
+	}   else if (b >= a && b >= c) {
+		console.log(b)
+	}   else {
+		console.log(c)
+	}
+</script>
+
+<script id="ch0104/16" type="ch0104.16">
+	var a=Number(prompt())
+	var b=Number(prompt())
+	var c=Number(prompt())
+	if ((a >= b && a >= c) && ((b + c) > a)) {
+		console.log("yes")
+	}   else if ((b >= a && b >= c) && ((a + c) > b)) {
+		console.log("yes")
+	}   else if ((c >= a && c >= b) && ((a + b) > c)) {
+		console.log("yes")
+	}	else {
+		console.log("no")
+	}
+</script>
+
+<script id="ch0104/17" type="ch0104.17">
+	var a=Number(prompt())
+	if ((a % 4 !=0) || (a % 100 ==0 && a % 400 !=0) || (a % 3200 ==0)) {
+		console.log("N")
+	}  	else {
+		console.log("Y")
+	}
+</script>
+
+<script id="ch0104/18" type="ch0104.18">
+	var x=Number(prompt())
+	var y=Number(prompt())
+	if ((x <= 1 && x >= -1) && (y <= 1 && y >= -1) ) {
+		console.log("yes")
+	}  	else {
+		console.log("no")
+	}
+</script>
+
+<script id="ch0104/19" type="ch0104.19">
+	var a=Number(prompt())
+	var b=Number(prompt())
+	var c=prompt()
+	if (c=="+") {
+		var d=a + b
+		console.log(d)
+	}  	else if (c=="-") {
+		var d=a - b
+		console.log(d)
+	}  	else if (c=="*") {
+		var d= a * b
+		console.log(d)
+	}	else if ((c=="/") && (b!=0)) {
+		var d= a / b
+		console.log(d)
+	}	else if ((c=="/") && (b==0)) {
+		console.log("Divided" + " " + "by" + " " + "zero!")
+	}	else {
+		console.log("Invalid" + " " + "operator!")
+	}
+</script>
+
+<script id="ch0104/20" type="ch0104.21">
+	
+</script>
+
+<script id="ch0104/21" type="ch0104.21">
+	var n=Number(prompt())
+	var x=Number(prompt())
+	var y=Number(prompt())
+	var z=n - Math.ceil(y / x)
+	console.log(z)
+</script>
