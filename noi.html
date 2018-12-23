@@ -786,7 +786,7 @@
     h10 = h
     sum = sum - h * 2
     console.log(sum.toFixed(4))
-    console.log(h10.toFixed(8))  
+    console.log(h10.toFixed(7))  
 </script>
 
 <script id="ch0105/21" type="ch0105.21">
@@ -989,11 +989,11 @@
 		console.log(sum)
 </script>
 
-<script id="ch0105/35" type="ch0105.35">
+<script id="ch0105/35" type="text/javascript">
 		var n = Number(prompt())
 		var sum = 1
 		var a 
-		for (var i = 1;i < n; i++) {
+		for (var i = 1;i <= n; i++) {
       a = 1
       for (var j = 1;j <= i; j++) {
         a *= j  
@@ -1004,15 +1004,16 @@
 </script>
 
 <script id="ch0105/36" type="ch0105.36">
-		var x = Number(prompt()).toFixed(1)
-		var n = Number(prompt())
+		var x = Number(prompt())
+		var n = Number(prompt())		
 		var sum = 1
+		x = x.toFixed(1)
 		for (var i = 1;i <= n; i++) {
       a = 1
       for (var j = 1;j <= i; j++) {
         a *= x   
       }
-			sum +=  a
+			sum += a
 		}
 		console.log(sum.toFixed(2))
 </script>
