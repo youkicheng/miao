@@ -831,24 +831,20 @@
 	}	
 </script>
 
-<script id="ch0105/23" type="ch0105.22">	
+<script id="ch0105/23" type="ch0105.23>		
 		var m = Number(prompt())
 		var n = Number(prompt())
+		var sum = 0
+		var num
 		for (var i = 0; i < n ; i++) {
 			num = Number(prompt())
 			  m = m - num
-			  if (m <= 0) {
-			  	console.log(i + 1)
-			  	break;
+			  if (m < 0) {
+          sum += 1
+			    m = m + num
 			  } 
 		}
-		if (i == n) {
-			console.log(0)
-		}  else {
-			  for (var j = i; j < (n - 1); j++) {
-			  	num = Number(prompt())
-			  }
-		}
+		console.log(sum)
 </script>
 
 <script id="ch0105/24" type="ch0105.24">	
@@ -870,8 +866,21 @@
 		console.log(max)		
 </script>
 
-<script id="ch0105/25" type="ch0105.25">	
-		
+<script id="ch0105/25"  type="ch0105.25">
+	for (var i = 81; i <= 350; i++) {
+		var n = i
+		d70 = n % 7
+		d71 = (n - d70) / 7 % 7
+		d72 = (n - d70 - d71 * 7) / 7 / 7 % 7
+		d90 = n % 9
+		d91 = (n - d90) / 9 % 9
+		d92 = (n - d90 - d91 * 9) / 9 / 9 % 9
+		if (d70 == d92 && d71 == d91 && d72 == d90) {
+			console.log(i)
+			console.log("" + d70 + d71 + d72)
+			console.log("" + d90 + d91 + d92)
+		}
+	}		
 </script>
 
 <script id="ch0105/26" type="ch0105.26">
@@ -948,13 +957,20 @@
 	  } 
 </script>
 
-<script id="ch0105/31" type="defeat">
-		var N = Number(prompt())
-		var M = Number(prompt())
-		var light = 1
-		var dark = 0
-		for (var i = 0;i < M; i++) {
-      M
+<script id="ch0105/31" type="ch0105.31">
+		var l = Number(prompt())
+		var p = Number(prompt())
+    var turn
+		for (var lightNum = 1; lightNum <= l; lightNum++) { 
+ 			turn = 0
+ 			for (var pNum = 1; pNum <= lightNum && pNum <=p; pNum++) {
+ 				if (lightNum % pNum == 0) {
+ 					turn++
+ 				}
+ 			}
+ 			if (turn % 2 == 1) {
+ 				console.log(lightNum)
+ 			}
 		}
 </script>
   
@@ -989,7 +1005,7 @@
 		console.log(sum)
 </script>
 
-<script id="ch0105/35" type="text/javascript">
+<script id="ch0105/35" type="ch0105.35">
 		var n = Number(prompt())
 		var sum = 1
 		var a 
@@ -1022,8 +1038,24 @@
 
 </script>
 
-<script id="ch0105/38" type="defeat">
-  
+<script id="ch0105/38" type="ch0105.38">
+  	var n= Number(prompt())
+  	var result
+    if (n == 0) {
+    	var c = Number(prompt())
+    	console.log(0)
+    } else {
+     	for (var i = 0; i <= n; i++) {
+        var c = Number(prompt())
+        if (i == n) {
+      	  break
+        }
+      result = c * (n - i) 
+      console.log(result)
+  	  }	
+    }
+
+  	
 </script>
 
 <script id="ch0105/39" type="ch0105.39">
@@ -1145,7 +1177,75 @@
   }
   console.log(sum)
 </script>
+<!-- 
+<script id="sort" sample-input="4 1 7" sample-output="1 4 7" comment="输入三个数，把此三个数按升序输出">
 
+</script>
+
+<script id="narcissistic " sample-input="153" sample-output="YES" comment="判断一个数是否为水仙花数" type="nar">
+	var sum = 0
+	var result
+  for (var i = 100; i <= 100000; i++) {
+      L = (i.toString()).length
+    while (i != 0) {
+     	e = i % 10
+     	i = parseInt(i / 10)
+     	for (var j = 0; j < L; j++) {
+     		result = Math.pow(e,j+1)
+     	}
+     	sum += result
+    }
+      if (i == sum) {
+  	 console.log("i")
+   }
+  }
+
+</script>
+<script id="narcissistics" sample-input="" sample-output="" comment="找出100到10000以内所有的水仙花数">
+  
+</script>
+<script id="palindrom" sample-input="12321" sample-output="YES" comment="判断一个非负整数是否为回文数字">
+  
+</script>
+
+<script id="weekday" sample-input="2018 6" sample-output="5" comment="输入年份与月份，给出该年该月的第一天是星期几">
+  
+</script>
+<script id="complete-number" sample-input="6" sample-output="YES" comment="判断一个数是否为完全数">
+  
+</script>
+<script id="complete-numbers" sample-input="" sample-output="" comment="输出10000以内所有的完全数">
+  
+</script>
+<script id="prime" sample-input="7" sample-output="YES" comment="判断一个数是否为素数">
+  
+</script>
+<script id="primes" sample-input="" sample-output="" comment="输出100以内所有的素数">
+  
+</script>
+<script id="itob" sample-input="123" sample-output="123" comment="数字转换成字符串，即实现Number函数的功能，不可使用+号或者Number函数">
+  
+</script>
+<script id="lcf&lcm" sample-input="12 9" sample-output="36 3" comment="给定两个数，求它们的最小公倍数和最大公约数">
+  
+</script>
+
+<script id="7" sample-input="" sample-output="" comment="敲7，输出7的倍数或数位中含有7的数如（21，27）">
+  
+</script>
+<script id="sqrt" sample-input="2" sample-output="1.414" comment="不使用Math.sqrt，求一个非负数的平方根，至少精确到小数点后3位">
+  
+</script>
+
+
+<script id="c&a">
+  
+</script>
+
+
+<script id="round">
+  
+</script> -->
 
 
 
