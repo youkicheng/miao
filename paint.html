@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>画图</title>
+  <style>
+    canvas {
+      border: 2px solid #f0f;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="300"></canvas>
+</body>
+<script>
+  var canvas = document.querySelector('canvas')
+  canvas.style.imageRendering = 'pixelated'
+  var ctx = canvas.getContext('2d')
+
+  function dot(x, y, color = 'black') {
+    ctx.fillStyle = color
+    ctx.fillRect(x, y, 1, 1)
+  }
+  /**
+   * YOUR TASK
+画图的题：
+画一条实线
+画一条一个实点一个空点的虚线
+画一条两个实点两个空点的虚线
+画一条三个实点两个空点的虚线
+画一条45度的斜线
+画一条跨越画布左上角和右下角的对角线
+画一个空心矩形
+画一个实心矩形
+画一个rgb色彩空间的某一面
+画一个空心的圆rgb
+画一个实心的圆
+画一个大小合适的sin(x)的图像
+   */
+</script>
+<script>
+  // YOUR CODE GOES BELOW
+  var x
+  var y
+  var angle
+  for (x = 0; x <= 400; x++) {
+     y = 10
+     console.log(dot(x,y))
+  }
+
+  for (x = 0; x <= 400; x++) {
+    y = 20
+    if (x % 2 == 0) {
+      console.log(dot(x,y))
+    }
+  }
+
+  for (x = 0; x <= 400; x++) {
+    y = 30
+    if (x % 4 == 0 || x % 4 == 1) {
+      console.log(dot(x,y))
+    }
+  } 
+
+  for (x = 0; x <= 400; x++) {
+    y = 40
+    if (x % 5 == 0 || x % 5 == 1 || x % 5 == 2) {
+      console.log(dot(x,y))
+    }
+  } 
+
+  for (x = 0; x <= 400; x++) {
+    y = x
+    console.log(dot(x,y))
+  }
+
+  for (x = 0; x <= 400; x++) {
+    y = (300 / 400) * x
+    console.log(dot(x,y))
+  }
+
+  for(x = 150; x <= 200; x++) {
+    for(y = 50; y <= 80; y++) {
+      if (x == 150 || x == 200 || y == 50 || y == 80 )
+      console.log(dot(x,y,"red"))
+    }
+  }
+
+  for(x = 150; x <= 200; x++) {
+    for(y = 90; y <= 120 ; y++) {
+      console.log(dot(x,y,"red"))
+    }
+  }
+
+  for(x = 220; x <= 283; x++) {
+    for(y = 50; y <= 113; y++) {
+      console.log(dot(x,y,'rgb(255, ' + ((x - 220) * 4) + ', ' + ((y - 50) * 4) + ')'))
+    }
+  }
+
+  for(angle = 0; angle < 360; angle++) {
+    console.log(dot(80 + 30 * Math.cos(angle),150 + 30 * Math.sin(angle),"blue"))
+  }
+
+  for(angle = 0; angle <= 360; angle++) {
+    for(r = 0; r <= 30; r++) {
+      console.log(dot(80 + r * Math.cos(angle),220 + r * Math.sin(angle),"blue"))
+    }
+  }
+
+  for (x = 0; x <= 400; x++) {
+    y = Math.sin(x / 20) * 30;
+    console.log(dot(x, y + 150))
+  }  
+</script>
+</html>
