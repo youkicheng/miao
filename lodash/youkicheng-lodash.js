@@ -1,8 +1,8 @@
-var USERNAME = {
-  chunk: function chunk(ary, size = 1) {
+var youkicheng = {
+  chunk: function(ary, size = 1) {
     var result = []
-    for(var i = 0; i< ??; i++) {
-      result.push(ary.slice(i, i + size))
+    for(var i = 0; i < ary.length; i = i + size) {
+      result.push(ary.slice(i,i + size))
     }
     return result
   },
@@ -14,5 +14,5 @@ var USERNAME = {
       }
     }
     return result
-  }
+  },
 }
